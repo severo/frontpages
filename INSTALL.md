@@ -42,5 +42,5 @@ nano config.ini
 Lancer la capture d'écran :
 
 ```
-xvfb-run --auto-servernum --server-num=1 ./unes_screenshot.py
+cd /path/to/install/; xvfb-run --auto-servernum --server-num=1 ./unes_screenshot.py > /tmp/screenshot.log
 ```
