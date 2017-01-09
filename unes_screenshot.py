@@ -1,6 +1,8 @@
 #!./unes/bin/python
 import sys
 import time
+import datetime
+import os
 from configobj import ConfigObj
 from PyQt4.QtCore import *
 from PyQt4.QtGui import *
@@ -37,11 +39,24 @@ class Screenshot(QWebView):
     def _loadFinished(self, result):
         self._loaded = True
 
+def createDir(baseDir):
+    # Essayer de creer le repertoire des captures s'il n'existe pas
+    # http://stackoverflow.com/a/14364249/7351594
+    try:
+        os.makedirs(baseDir)
+    except OSError:
+        if not os.path.isdir(baseDir):
+            raise
 
 config = ConfigObj('unes.conf')
+baseDir = config['baseDir']
 
 s = Screenshot()
 for site, params in config['sites'].iteritems():
     url = params['url']
-    screenshot = params['screenshot']
-    s.capture(url, screenshot)
+    siteDir = os.path.join(os.sep, baseDir, site)
+    createDir(siteDir)
+    date = datetime.datetime.now()
+    datePath = date.strftime("%Y%m%d%H%M%S")
+    screenshotFilename = os.path.join(os.sep, siteDir, datePath + '.png')
+    s.capture(url, screenshotFilename)

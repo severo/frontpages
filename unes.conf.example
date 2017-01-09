@@ -1,0 +1,16 @@
+baseDir = /path/to/files/
+
+[sites]
+
+  [[liberation]]
+    url = 'http://www.liberation.fr'
+
+  [[lefigaro]]
+    url = 'http://www.lefigaro.fr'
+
+# Le robot de lemonde.fr interdit l'indexation automatique de ses pages : http://www.lemonde.fr/robots.txt
+#  [[lemonde]]
+#    url = 'http://www.lemonde.fr/'
+#
+#  [[lemondepolitique]]
+#    url = 'http://www.lemonde.fr/politique/'
