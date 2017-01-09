@@ -37,10 +37,11 @@ class Screenshot(QWebView):
     def _loadFinished(self, result):
         self._loaded = True
 
-s = Screenshot()
 
 config = ConfigObj('unes.conf')
 
-url = config['url']
-screenshot = config['screenshot']
-s.capture(url, screenshot)
+s = Screenshot()
+for site, params in config['sites'].iteritems():
+    url = params['url']
+    screenshot = params['screenshot']
+    s.capture(url, screenshot)

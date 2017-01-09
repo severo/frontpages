@@ -12,3 +12,4 @@ Analyser les "unes" en ligne des principaux quotidiens français.
  - position des occurrences
  - taille de la police, ou taille du cadre de la mention, de chaque occurrence + présence d'une photo ou non
  - superficie / carte de la page dédiée à chaque candidat
+5. Utiliser Selenium ? http://www.test-recette.fr/recette/tests-fonctionnels-automatises/testing-automatise-selenium-python.html, http://stackoverflow.com/a/13960516/7351594

@@ -14,6 +14,17 @@ cd unes/
 virtualenv unes
 ./unes/bin/pip install configobj
 ln -s /usr/lib/python2.7/dist-packages/PyQt4/ unes/lib/python2.7/site-packages/ # http://stackoverflow.com/a/28850104/7351594
+´´´
+
+Pour Debian jessie:
+
+´´´
+ln -s /usr/lib/python2.7/dist-packages/sip.so unes/lib/python2.7/site-packages/ # http://stackoverflow.com/a/28850104/7351594
+´´´
+
+Pour Debian stretch:
+
+´´´
 ln -s /usr/lib/python2.7/dist-packages/sip.x86_64-linux-gnu.so unes/lib/python2.7/site-packages/ # http://stackoverflow.com/a/28850104/7351594
 ´´´
 
