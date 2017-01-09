@@ -1,6 +1,7 @@
+#!./unes/bin/python
 import sys
 import time
-#from configobj import ConfigObj
+from configobj import ConfigObj
 from PyQt4.QtCore import *
 from PyQt4.QtGui import *
 from PyQt4.QtWebKit import *
@@ -38,8 +39,7 @@ class Screenshot(QWebView):
 
 s = Screenshot()
 
-#config = ConfigObj('unes.conf')
-config = {'url': 'http://www.lefigaro.fr/', 'screenshot': 'figaro.png'}
+config = ConfigObj('unes.conf')
 
 url = config['url']
 screenshot = config['screenshot']
