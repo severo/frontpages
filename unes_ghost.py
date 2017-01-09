@@ -1,3 +1,4 @@
+#!./unes_ghost/bin/python
 from ghost import Ghost
 ghost = Ghost()
 ghost.open('http://lemonde.fr')
