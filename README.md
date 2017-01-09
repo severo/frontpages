@@ -12,4 +12,3 @@ Analyser les "unes" en ligne des principaux quotidiens français.
  - position des occurrences
  - taille de la police, ou taille du cadre de la mention, de chaque occurrence + présence d'une photo ou non
  - superficie / carte de la page dédiée à chaque candidat
- 
