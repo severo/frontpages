@@ -48,7 +48,7 @@ def createDir(baseDir):
         if not os.path.isdir(baseDir):
             raise
 
-config = ConfigObj('unes.conf')
+config = ConfigObj('config.ini')
 baseDir = config['baseDir']
 
 s = Screenshot()

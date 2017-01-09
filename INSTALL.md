@@ -28,6 +28,17 @@ Pour Debian stretch:
 ln -s /usr/lib/python2.7/dist-packages/sip.x86_64-linux-gnu.so unes/lib/python2.7/site-packages/ # http://stackoverflow.com/a/28850104/7351594
 ```
 
+# Configuration
+
+Copier et modifier le fichier de configuration :
+
+```
+cp config.ini.example config.ini
+nano config.ini
+```
+
+# Test
+
 Lancer la capture d'écran :
 
 ```
