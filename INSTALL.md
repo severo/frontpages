@@ -1,4 +1,4 @@
-# Installation pour Debian stretch
+# Installation pour Debian jessie/stretch
 
 Installer "unes" :
 
@@ -10,7 +10,7 @@ Installer https://github.com/jeanphix/Ghost.py, dans un environnement virtuel (P
 
 ´´´
 cd unes/
-sudo apt install python-virtualenv make cmake gcc g++ python-dev qt4-qmake qt4-default
+sudo apt install python-virtualenv make cmake gcc g++ python-dev qt4-qmake qt4-default xvfb
 virtualenv unes_ghost
 cd unes_ghost/
 ./bin/pip install pyside # Très long !
