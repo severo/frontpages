@@ -4,7 +4,7 @@ Installer "unes" :
 
 ```
 git clone https://framagit.org/severo/unes.git
-sudo apt install python-virtualenv make cmake gcc g++ python-dev qt4-qmake qt4-default xvfb python-qt4 python-sip-dev
+sudo apt install python-virtualenv make cmake gcc g++ python-dev qt4-qmake qt4-default xvfb python-qt4 python-sip-dev wget bash
 ```
 
 Installer un environnement virtuel (Python 2.7), en se positionnant à la racine du répertoire "unes" :
@@ -43,4 +43,10 @@ Lancer la capture d'écran :
 
 ```
 cd /path/to/install/; xvfb-run --auto-servernum --server-num=1 ./unes_screenshot.py > /tmp/screenshot.log
+```
+
+Lancer le téléchargement de HTML :
+
+```
+cd /path/to/install/; ./unes_html.sh > /tmp/html.log
 ```
