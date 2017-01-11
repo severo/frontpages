@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Configuration (plus tard : lire le fichier config.ini)
-declare -a sites=("www.liberation.fr" "www.lefigaro.fr" "www.lemonde.fr" "www.liberation.fr/france" "www.lefigaro.fr/politique/" "lemonde.fr/politique/")
+declare -a sites=("www.liberation.fr" "www.lefigaro.fr" "www.lemonde.fr" "www.liberation.fr/france" "www.lefigaro.fr/politique/" "www.lemonde.fr/politique/")
 baseUrl=/var/www/unes
 
 # Telecharger l'url
